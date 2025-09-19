@@ -1,153 +1,174 @@
+/* Style de base pour la section des partenaires */
 .partners {
-  padding: 60px 0;
-  background-color: #cbdecb;
-  overflow: hidden;
-  margin-left : 80px;
-  margin-right : 80px;
+  padding: 60px 0; /* Espacement vertical */
+  background-color: #cbdecb; /* Couleur de fond vert clair */
+  overflow: hidden; /* Masquage du contenu qui dépasse */
+  margin-left: 80px; /* Marge à gauche */
+  margin-right: 80px; /* Marge à droite */
 }
 
+/* Conteneur principal avec largeur maximale */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal */
+  padding: 0 20px; /* Marge intérieure sur les côtés */
 }
 
+/* Style du titre de la section */
 .partners-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 40px;
+  text-align: center; /* Centrage du texte */
+  font-size: 32px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #2d3748; /* Couleur de texte foncée */
+  margin-bottom: 40px; /* Marge en dessous */
 }
 
+/* Conteneur pour le défilement des partenaires */
 .partners-scroll-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+  position: relative; /* Position relative pour les enfants positionnés */
+  overflow: hidden; /* Masquage du contenu qui dépasse */
+  width: 100%; /* Pleine largeur */
 }
 
+/* Piste de défilement */
 .partners-track {
-  display: flex;
-  animation: scroll 20s linear infinite;
-  width: max-content;
+  display: flex; /* Affichage en flexbox */
+  animation: scroll 20s linear infinite; /* Animation de défilement */
+  width: max-content; /* Largeur en fonction du contenu */
 }
 
+/* Style de base d'une carte de partenaire */
 .partner-card {
-  flex: 0 0 auto;
-  width: 220px;
-  margin: 0 15px;
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 0 0 auto; /* Pas de croissance ni de réduction */
+  width: 220px; /* Largeur fixe */
+  margin: 0 15px; /* Marge horizontale entre les cartes */
+  background: white; /* Fond blanc */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Ombre légère */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animations fluides */
 }
 
+/* Effet au survol d'une carte */
 .partner-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px); /* Légère élévation */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée */
 }
 
+/* Conteneur du logo du partenaire */
 .partner-logo {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
+  height: 80px; /* Hauteur fixe */
+  display: flex; /* Affichage en flexbox */
+  align-items: center; /* Centrage vertical */
+  justify-content: center; /* Centrage horizontal */
+  margin-bottom: 15px; /* Marge en dessous */
 }
 
+/* Style de l'image du logo */
 .partner-logo img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  max-width: 100%; /* Largeur maximale */
+  max-height: 100%; /* Hauteur maximale */
+  object-fit: contain; /* Ajustement de l'image pour tenir dans le conteneur */
 }
 
+/* Conteneur des informations du partenaire */
 .partner-info {
-  text-align: center;
+  text-align: center; /* Centrage du texte */
 }
 
+/* Style du nom du partenaire */
 .partner-name {
-  font-size: 16px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 5px;
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #2d3748; /* Couleur de texte foncée */
+  margin-bottom: 5px; /* Marge en dessous */
 }
 
+/* Style de la catégorie du partenaire */
 .partner-category {
-  font-size: 14px;
-  color: #718096;
+  font-size: 14px; /* Taille de police */
+  color: #718096; /* Couleur de texte gris clair */
 }
 
 /* Animation de défilement */
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(0); /* Position de départ */
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Déplacement vers la gauche */
   }
 }
 
 /* Pause l'animation au survol */
 .partners-scroll-container:hover .partners-track {
-  animation-play-state: paused;
+  animation-play-state: paused; /* Mise en pause au survol */
 }
 
-/* Responsive */
+/* Styles pour les écrans jusqu'à 1024px (tablettes en mode paysage) */
 @media (max-width: 1024px) {
   .partner-card {
-    width: 200px;
-    margin: 0 10px;
+    width: 200px; /* Réduction de la largeur des cartes */
+    margin: 0 10px; /* Réduction de la marge entre les cartes */
   }
 }
 
+/* Styles pour les tablettes (jusqu'à 768px) */
 @media (max-width: 768px) {
   .partners {
-    padding: 40px 0;
+    padding: 40px 0; /* Réduction de l'espacement vertical */
+    margin-left: 20px; /* Réduction des marges latérales */
+    margin-right: 20px;
   }
   
   .partners-title {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 28px; /* Réduction de la taille du titre */
+    margin-bottom: 30px; /* Réduction de la marge en dessous */
   }
   
   .partner-card {
-    width: 180px;
-    margin: 0 8px;
-    padding: 15px;
+    width: 180px; /* Réduction de la largeur des cartes */
+    margin: 0 8px; /* Réduction de la marge entre les cartes */
+    padding: 15px; /* Réduction de l'espacement intérieur */
   }
   
   .partner-logo {
-    height: 70px;
+    height: 70px; /* Réduction de la hauteur du logo */
   }
 }
 
+/* Styles pour les téléphones mobiles (jusqu'à 480px) */
 @media (max-width: 480px) {
+  .partners {
+    margin-left: 10px; /* Réduction supplémentaire des marges latérales */
+    margin-right: 10px;
+  }
+  
   .partners-title {
-    font-size: 24px;
+    font-size: 24px; /* Réduction supplémentaire de la taille du titre */
   }
   
   .partner-card {
-    width: 150px;
-    margin: 0 5px;
-    padding: 10px;
+    width: 150px; /* Réduction supplémentaire de la largeur des cartes */
+    margin: 0 5px; /* Réduction supplémentaire de la marge entre les cartes */
+    padding: 10px; /* Réduction supplémentaire de l'espacement intérieur */
   }
   
   .partner-logo {
-    height: 60px;
-    margin-bottom: 10px;
+    height: 60px; /* Réduction supplémentaire de la hauteur du logo */
+    margin-bottom: 10px; /* Marge en dessous du logo */
   }
   
   .partner-name {
-    font-size: 14px;
+    font-size: 14px; /* Réduction de la taille du nom */
   }
   
   .partner-category {
-    font-size: 12px;
+    font-size: 12px; /* Réduction de la taille de la catégorie */
   }
   
-  /* Ralentir l'animation sur mobile */
+  /* Ralentir l'animation sur mobile pour une meilleure expérience utilisateur */
   .partners-track {
-    animation-duration: 25s;
+    animation-duration: 25s; /* Animation plus lente */
   }
 }

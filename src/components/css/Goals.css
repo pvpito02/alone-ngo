@@ -22,6 +22,7 @@
   margin-bottom: 60px;
 }
 
+/* Style des cartes individuelles d'objectifs */
 .goal-card {
   background: #cbdecb;
   padding: 15px 10px;
@@ -32,6 +33,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Effet au survol des cartes */
 .goal-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -67,6 +69,7 @@
   border-radius: 10px;
 }
 
+/* Conteneur du contenu de la mission */
 .mission-content-box {
   height: 100%;
   display: flex;
@@ -102,10 +105,12 @@
   align-self: flex-start;
 }
 
+/* Effet au survol du bouton */
 .mission-button:hover {
   background-color: #324732;
 }
 
+/* Style de la colonne de droite */
 .mission-col-right {
   display: flex;
   flex-direction: column;
@@ -120,6 +125,7 @@
   text-align: right;
 }
 
+/* Style du titre de l'objectif de mission */
 .mission-goal-title {
   text-align: right;
   font-size: 20px;
@@ -128,16 +134,19 @@
   letter-spacing: 3px;
 }
 
+/* Style de l'image de la mission */
 .mission-image {
   text-align: center;
 }
 
+/* Style de l'image à l'intérieur du conteneur */
 .mission-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
+/* Requête média pour les tablettes en mode paysage */
 @media (max-width: 1024px) {
   .goals-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -145,6 +154,7 @@
   }
 }
 
+/* Requête média pour les tablettes en mode portrait */
 @media (max-width: 768px) {
   .goals {
     padding: 60px 0;
@@ -183,6 +193,7 @@
   }
 }
 
+/* Requête média pour les téléphones mobiles */
 @media (max-width: 480px) {
   .goals-grid {
     grid-template-columns: 1fr;

@@ -1,188 +1,211 @@
+/* Style de base pour la section des événements */
 .events {
-  padding: 80px 0;
-  background-color: #f7fafc;
+  padding: 80px 0; /* Espacement vertical */
+  background-color: #f7fafc; /* Couleur de fond légère */
 }
 
+/* Conteneur principal avec largeur maximale */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal */
+  padding: 0 20px; /* Marge intérieure sur les côtés */
 }
 
+/* Conteneur flex pour la disposition en deux colonnes */
 .events-content {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
+  display: flex; /* Affichage en flexbox */
+  gap: 50px; /* Espacement entre les colonnes */
+  align-items: flex-start; /* Alignement en haut */
 }
 
+/* Colonne de gauche avec le titre et le bouton */
 .events-left {
-  flex: 1;
-  padding-top: 30px;
+  flex: 1; /* Prend l'espace disponible */
+  padding-top: 30px; /* Dégagement en haut */
 }
 
+/* Style du sous-titre */
 .events-subtitle {
-  font-size: 20px;
-  color: #000000;
-  margin-bottom: 10px;
-  letter-spacing: 3px;
+  font-size: 20px; /* Taille de police */
+  color: #000000; /* Couleur du texte */
+  margin-bottom: 10px; /* Marge en dessous */
+  letter-spacing: 3px; /* Espacement entre les lettres */
 }
 
+/* Style du titre principal */
 .events-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 30px;
-  line-height: 1.3;
+  font-size: 36px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #2d3748; /* Couleur de texte foncée */
+  margin-bottom: 30px; /* Marge en dessous */
+  line-height: 1.3; /* Hauteur de ligne */
 }
 
+/* Style du bouton principal */
 .events-button {
-  background-color: #5e805e;
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: #5e805e; /* Couleur de fond verte foncée */
+  color: white; /* Couleur du texte */
+  border: none; /* Pas de bordure */
+  padding: 15px 40px; /* Remplissage intérieur */
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de souris en forme de main */
+  transition: background-color 0.3s, transform 0.3s; /* Animations fluides */
 }
 
+/* Effet au survol du bouton */
 .events-button:hover {
-  background-color: #89a489;
-  transform: translateY(-2px);
+  background-color: #89a489; /* Couleur de fond plus claire */
+  transform: translateY(-2px); /* Légère élévation */
 }
 
+/* Colonne de droite avec la liste des événements */
 .events-right {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex: 2; /* Prend deux fois plus d'espace que la colonne de gauche */
+  display: flex; /* Affichage en flexbox */
+  flex-direction: column; /* Direction verticale */
+  gap: 30px; /* Espacement entre les cartes */
 }
 
+/* Style de base d'une carte d'événement */
 .event-card {
-  display: flex;
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex; /* Affichage en flexbox */
+  background-color: white; /* Fond blanc */
+  border-radius: 8px; /* Coins arrondis */
+  overflow: hidden; /* Masquage du contenu qui dépasse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animations fluides */
 }
 
+/* Effet au survol d'une carte */
 .event-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Légère élévation */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
 }
 
+/* Conteneur de l'image de l'événement */
 .event-image {
-  flex: 1;
-  min-width: 200px;
+  flex: 1; /* Prend l'espace disponible */
+  min-width: 200px; /* Largeur minimale */
 }
 
+/* Style de l'image */
 .event-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Largeur complète */
+  height: 100%; /* Hauteur complète */
+  object-fit: cover; /* Ajustement de l'image pour couvrir le conteneur */
 }
 
+/* Conteneur des détails de l'événement */
 .event-details {
-  flex: 2;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 2; /* Prend deux fois plus d'espace que l'image */
+  padding: 25px; /* Espacement intérieur */
+  display: flex; /* Affichage en flexbox */
+  flex-direction: column; /* Direction verticale */
+  justify-content: center; /* Centrage vertical */
 }
 
+/* Style du titre de l'événement */
 .event-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 10px;
+  font-size: 20px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #2d3748; /* Couleur de texte foncée */
+  margin-bottom: 10px; /* Marge en dessous */
 }
 
+/* Style de la description de l'événement */
 .event-description {
-  color: #718096;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  color: #718096; /* Couleur de texte gris clair */
+  margin-bottom: 20px; /* Marge en dessous */
+  line-height: 1.5; /* Hauteur de ligne */
 }
 
+/* Conteneur des informations (lieu et date) */
 .event-info {
-  display: flex;
-  gap: 30px;
+  display: flex; /* Affichage en flexbox */
+  gap: 30px; /* Espacement entre les éléments */
 }
 
+/* Style des conteneurs de lieu et de date */
 .event-location, .event-date {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Affichage en flexbox */
+  flex-direction: column; /* Direction verticale */
 }
 
+/* Style des étiquettes (Lieu, Date) */
 .event-label {
-  font-size: 12px;
-  color: #718096;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
+  font-size: 12px; /* Petite taille de police */
+  color: #718096; /* Couleur de texte gris clair */
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 0.5px; /* Espacement entre les lettres */
+  margin-bottom: 5px; /* Marge en dessous */
 }
 
+/* Style des valeurs (Ville, Date réelle) */
 .event-value {
-  font-size: 16px;
-  font-weight: 600;
-  color: #2d3748;
+  font-size: 16px; /* Taille de police */
+  font-weight: 600; /* Épaisseur de police */
+  color: #2d3748; /* Couleur de texte foncée */
 }
 
+/* Styles pour les écrans jusqu'à 1024px de large (tablettes en mode paysage) */
 @media (max-width: 1024px) {
   .events-content {
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: column; /* Passage à une seule colonne */
+    gap: 40px; /* Espacement entre les éléments */
   }
   
   .events-left {
-    text-align: center;
+    text-align: center; /* Centrage du texte */
   }
   
   .event-card {
-    flex-direction: column;
+    flex-direction: column; /* Empilement vertical de l'image et des détails */
   }
   
   .event-image {
-    min-width: 100%;
-    height: 200px;
+    min-width: 100%; /* Pleine largeur */
+    height: 200px; /* Hauteur fixe */
   }
 }
 
+/* Styles pour les tablettes (jusqu'à 768px) */
 @media (max-width: 768px) {
   .events {
-    padding: 60px 0;
+    padding: 60px 0; /* Réduction de l'espacement vertical */
   }
   
   .events-title {
-    font-size: 28px;
+    font-size: 28px; /* Réduction de la taille du titre */
   }
   
   .event-info {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* Empilement vertical des informations */
+    gap: 15px; /* Espacement entre les éléments */
   }
 }
 
+/* Styles pour les téléphones mobiles (jusqu'à 480px) */
 @media (max-width: 480px) {
   .events-title {
-    font-size: 24px;
+    font-size: 24px; /* Réduction supplémentaire de la taille du titre */
   }
   
   .events-button {
-    padding: 12px 30px;
-    font-size: 14px;
+    padding: 12px 30px; /* Réduction du rembourrage */
+    font-size: 14px; /* Réduction de la taille de police */
   }
   
   .event-details {
-    padding: 20px;
+    padding: 20px; /* Réduction de l'espacement intérieur */
   }
   
   .event-title {
-    font-size: 18px;
+    font-size: 18px; /* Réduction de la taille du titre de l'événement */
   }
   
   .event-description {
-    font-size: 14px;
+    font-size: 14px; /* Réduction de la taille de la description */
   }
 }

@@ -1,117 +1,133 @@
+/* Style de base pour la section des causes */
 .causes {
-  padding: 80px 0;
-  background-color: #f7fafc;
+  padding: 80px 0; /* Espacement vertical */
+  background-color: #f7fafc; /* Couleur de fond légère */
 }
 
+/* Conteneur principal avec largeur maximale */
 .container {
-  max-width: 1000px; /* Réduction de la largeur */
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1000px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal */
+  padding: 0 20px; /* Marge intérieure sur les côtés */
 }
 
+/* Style du sous-titre de la section */
 .causes-subtitle {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #000000;
-  margin-bottom: 10px;
-  letter-spacing: 3px;
+  text-align: center; /* Centrage du texte */
+  font-size: 20px; /* Taille de police */
+  margin-bottom: 10px; /* Marge en dessous */
+  color: #000000; /* Couleur du texte */
+  letter-spacing: 3px; /* Espacement entre les lettres */
 }
+
+/* Style du titre principal */
 .causes-title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 50px;
+  text-align: center; /* Centrage du texte */
+  font-size: 36px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #2d3748; /* Couleur de texte foncée */
+  margin-bottom: 50px; /* Marge en dessous */
 }
 
+/* Grille des cartes de causes */
 .causes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-bottom: 40px;
+  display: grid; /* Affichage en grille */
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de largeur égale */
+  gap: 25px; /* Espacement entre les cartes */
+  margin-bottom: 40px; /* Marge en dessous */
 }
 
+/* Style de base d'une carte de cause */
 .cause-card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow: hidden;
+  background-color: white; /* Fond blanc */
+  border-radius: 12px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation fluide */
+  overflow: hidden; /* Masquage du contenu qui dépasse */
 }
 
+/* Effet au survol d'une carte */
 .cause-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Légère élévation */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
 }
 
+/* Conteneur de l'image de la cause */
 .cause-image-container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
+  position: relative; /* Position relative pour les éléments enfants positionnés */
+  width: 100%; /* Largeur complète */
+  height: 200px; /* Hauteur fixe */
+  overflow: hidden; /* Masquage du débordement */
 }
 
+/* Style de l'image */
 .cause-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease, filter 0.3s ease;
+  width: 100%; /* Largeur complète */
+  height: 100%; /* Hauteur complète */
+  object-fit: cover; /* Ajustement de l'image pour couvrir le conteneur */
+  transition: transform 0.4s ease, filter 0.3s ease; /* Animation fluide */
 }
 
+/* Effet au survol de l'image */
 .cause-card:hover .cause-image {
-  transform: scale(1.1);
-  filter: brightness(1.1);
+  transform: scale(1.1); /* Légère mise à l'échelle */
+  filter: brightness(1.1); /* Légère augmentation de la luminosité */
 }
 
+/* Contenu de la carte */
 .cause-content {
-  padding: 25px;
+  padding: 25px; /* Espacement intérieur */
 }
 
+/* Titre de la carte */
 .cause-card-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #2d3748;
-  margin-bottom: 15px;
-  line-height: 1.4;
+  font-size: 18px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #2d3748; /* Couleur de texte foncée */
+  margin-bottom: 15px; /* Marge en dessous */
+  line-height: 1.4; /* Hauteur de ligne */
 }
 
+/* Date de la cause */
 .cause-date {
-  color: #718096;
-  margin-bottom: 10px;
-  font-size: 14px;
+  color: #718096; /* Couleur de texte gris clair */
+  margin-bottom: 10px; /* Marge en dessous */
+  font-size: 14px; /* Taille de police */
 }
 
+/* Montant de la collecte */
 .cause-amount {
-  font-size: 22px;
-  font-weight: bold;
-  color: #e53e3e;
-  margin-bottom: 5px;
+  font-size: 22px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  color: #e53e3e; /* Couleur rouge */
+  margin-bottom: 5px; /* Marge en dessous */
 }
 
+/* Description de la cause */
 .cause-description {
-  color: #4a5568;
-  font-weight: 500;
-  font-size: 14px;
+  color: #4a5568; /* Couleur de texte gris foncé */
+  font-weight: 500; /* Épaisseur de police moyenne */
+  font-size: 14px; /* Taille de police */
 }
 
+/* Style du bouton principal */
 .causes-button {
-  display: block;
-  margin: 0 auto 40px;
-  background-color:  #5e805e;
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  display: block; /* Affichage en bloc */
+  margin: 0 auto 40px; /* Centrage horizontal avec marge en bas */
+  background-color: #5e805e; /* Couleur de fond verte foncée */
+  color: white; /* Couleur du texte */
+  border: none; /* Pas de bordure */
+  padding: 15px 40px; /* Remplissage intérieur */
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de souris en forme de main */
+  transition: background-color 0.3s; /* Animation de transition */
 }
 
- 
+/* Effet au survol du bouton */
 .causes-button:hover {
-  background-color: #8fbc8f;
+  background-color: #8fbc8f; /* Couleur de fond plus claire */
 }
 
 .causes-footer {
@@ -124,72 +140,75 @@
   font-weight: bold;
 }
 
+/* Styles pour les écrans jusqu'à 1024px de large */
 @media (max-width: 1024px) {
   .container {
-    max-width: 900px;
+    max-width: 900px; /* Réduction de la largeur maximale */
   }
-  
+
   .causes-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes au lieu de 3 */
+    gap: 20px; /* Réduction de l'espacement */
   }
-  
+
   .cause-image-container {
-    height: 180px;
+    height: 180px; /* Réduction de la hauteur des images */
   }
 }
 
+/* Styles pour les tablettes (jusqu'à 768px) */
 @media (max-width: 768px) {
   .causes {
-    padding: 60px 0;
+    padding: 60px 0; /* Réduction de l'espacement vertical */
   }
-  
+
   .container {
-    max-width: 100%;
-    padding: 0 15px;
+    max-width: 100%; /* Pleine largeur */
+    padding: 0 15px; /* Réduction de la marge intérieure */
   }
-  
+
   .causes-title {
-    font-size: 28px;
+    font-size: 28px; /* Réduction de la taille du titre */
   }
-  
+
   .causes-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 25px; /* Espacement entre les cartes */
   }
-  
+
   .cause-content {
-    padding: 20px;
+    padding: 20px; /* Réduction de l'espacement intérieur */
   }
-  
+
   .cause-card-title {
-    font-size: 18px;
+    font-size: 18px; /* Taille de police du titre */
   }
-  
+
   .cause-amount {
-    font-size: 20px;
+    font-size: 20px; /* Réduction de la taille du montant */
   }
-  
+
   .cause-image-container {
-    height: 200px;
+    height: 200px; /* Hauteur des images */
   }
 }
 
+/* Styles pour les téléphones mobiles (jusqu'à 480px) */
 @media (max-width: 480px) {
   .causes-title {
-    font-size: 24px;
+    font-size: 24px; /* Réduction supplémentaire de la taille du titre */
   }
-  
+
   .causes-button {
-    padding: 12px 30px;
-    font-size: 14px;
+    padding: 12px 30px; /* Réduction du rembourrage */
+    font-size: 14px; /* Réduction de la taille de police */
   }
-  
+
   .causes-footer h3 {
-    font-size: 20px;
+    font-size: 20px; /* Réduction de la taille du titre du pied de page */
   }
-  
+
   .cause-image-container {
-    height: 180px;
+    height: 180px; /* Ajustement de la hauteur des images */
   }
 }

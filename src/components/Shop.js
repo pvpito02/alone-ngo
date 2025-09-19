@@ -1,7 +1,11 @@
+// Importation des dépendances nécessaires
 import React from 'react';
+// Importation des styles CSS spécifiques au composant
 import './css/Shop.css';
 
+// Définition du composant Shop qui affiche les produits en vente
 const Shop = () => {
+  // Tableau des produits avec leurs informations (nom, prix, étiquette, image)
   const products = [
     {
       name: "Sana Fatir Reusable Collection",
@@ -29,24 +33,47 @@ const Shop = () => {
     },
   ];
 
+  // Rendu du composant
   return (
+    // Section de la boutique avec un ID pour la navigation
     <section id="shop" className="shop">
       <div className="container">
+        {/* Titres de la section */}
         <h4 className="shop-title">We Are In A Mission</h4>
-        <h3 className="shop-subtitle">Product <span>Shop</span></h3>
+        <h3 className="shop-subtitle">Boutique <span>Produits</span></h3>
         
+        {/* Grille des produits */}
         <div className="shop-grid">
+          {/* Mapping du tableau des produits pour afficher chaque carte de produit */}
           {products.map((product, index) => (
-            <div key={index} className="product-card">
+            <article key={index} className="product-card" role="article">
+              {/* Image du produit */}
               <div className="product-image">
-                <img src={product.image} alt={product.name} />
+                <img 
+                  src={product.image} 
+                  alt={product.name} 
+                  loading="lazy"
+                />
               </div>
+              {/* Informations du produit */}
               <div className="product-info">
                 <h4 className="product-name">{product.name}</h4>
-                {product.price && <p className="product-price">{product.price}</p>}
-                <span className="product-tag">{product.tag}</span>
+                {/* Affichage du prix si disponible */}
+                {product.price && (
+                  <p className="product-price">
+                    {product.price.includes('£') 
+                      ? product.price.replace(/£/g, '€') // Conversion des livres en euros
+                      : product.price}
+                  </p>
+                )}
+                {/* Étiquette du produit (ex: Fait main, Écologique, etc.) */}
+                <span className="product-tag">
+                  {product.tag === 'Handmade' ? 'Fait main' : 
+                   product.tag === 'Eco-Friendly' ? 'Écologique' : 
+                   product.tag === 'Natural' ? 'Naturel' : product.tag}
+                </span>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
@@ -54,4 +81,5 @@ const Shop = () => {
   );
 };
 
+// Exportation du composant pour pouvoir l'utiliser ailleurs dans l'application
 export default Shop;

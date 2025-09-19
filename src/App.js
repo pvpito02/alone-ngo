@@ -1,35 +1,71 @@
+// Importation de React et des composants nécessaires
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Mission from './components/Mission';
-import Goals from './components/Goals';
-import Stats from './components/Stats';
-import Causes from './components/Causes';
-import About from './components/About';
-import Shop from './components/Shop';
-import Events from './components/Events';
-import Testimonials from './components/Testimonials';
-import News from './components/News';
-import Newsletter from './components/Newsletter';
-import Footer from './components/Footer';
-import Partners from './components/Partners';
 
+// Importation des composants de l'application
+import Header from './components/Header';        // En-tête du site
+import Hero from './components/Hero';            // Section héro avec image de fond et message principal
+import Mission from './components/Mission';      // Section décrivant la mission de l'ONG
+import Goals from './components/Goals';          // Objectifs de l'organisation
+import Stats from './components/Stats';          // Statistiques et réalisations
+import Causes from './components/Causes';        // Causes soutenues par l'ONG
+import About from './components/About';          // Section À propos
+import Shop from './components/Shop';            // Boutique en ligne
+import Events from './components/Events';        // Événements à venir
+import Testimonials from './components/Testimonials'; // Témoignages
+import News from './components/News';            // Dernières actualités
+import Newsletter from './components/Newsletter'; // Formulaire d'inscription à la newsletter
+import Footer from './components/Footer';        // Pied de page
+import Partners from './components/Partners';    // Partenaires de l'organisation
+
+/**
+ * Composant principal de l'application
+ * @returns {JSX.Element} L'application React
+ */
 function App() {
   return (
     <div className="App">
+      {/* Structure principale de l'application avec l'ordre d'affichage des composants */}
+      
+      {/* En-tête du site avec navigation */}
       <Header />
+      
+      {/* Bannière principale */}
       <Hero />
+      
+      {/* Section Mission */}
       <Mission />
+      
+      {/* Section Objectifs */}
       <Goals />
+      
+      {/* Section Statistiques */}
       <Stats />
+      
+      {/* Section Causes */}
       <Causes />
+      
+      {/* Section À propos */}
       <About />
+      
+      {/* Boutique en ligne */}
       <Shop />
+      
+      {/* Section Partenaires */}
       <Partners />
+      
+      {/* Section Événements */}
       <Events />
+      
+      {/* Témoignages */}
       <Testimonials />
+      
+      {/* Dernières actualités */}
       <News />
+      
+      {/* Inscription à la newsletter */}
       <Newsletter />
+      
+      {/* Pied de page */}
       <Footer />
     </div>
   );

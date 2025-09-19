@@ -1,7 +1,11 @@
+// Importation des dépendances nécessaires
 import React from 'react';
+// Importation des styles CSS spécifiques au composant
 import './css/Goals.css';
 
+// Définition du composant Goals
 const Goals = () => {
+  // Tableau des objectifs de développement durable avec leurs icônes
   const goals = [
     { title: "No Poverty", icon: "🚫" },
     { title: "Quality Education", icon: "🎓" },
@@ -12,11 +16,15 @@ const Goals = () => {
   ];
 
   return (
+    // Section principale des objectifs
     <section className="goals">
       <div className="container">
+        {/* Titre principal de la section */}
         <h2 className="goals-title">Sustainable Development <span>Goals</span></h2>
         
+        {/* Grille des objectifs */}
         <div className="goals-grid">
+          {/* Mapping du tableau goals pour afficher chaque objectif */}
           {goals.map((goal, index) => (
             <div key={index} className="goal-card">
               <div className="goal-icon">{goal.icon}</div>
@@ -25,7 +33,9 @@ const Goals = () => {
           ))}
         </div>
         
+        {/* Section de mission */}
         <div className="goals-mission-row">
+          {/* Colonne de gauche : texte de mission */}
           <div className="mission-col mission-col-left">
             <div className="mission-content-box">
               <h3 className="mission-subtitle">Help is <span>Our Goal</span> </h3>
@@ -37,6 +47,7 @@ const Goals = () => {
               <button className="mission-button">MORE ABOUT</button>
             </div>
           </div>
+          {/* Colonne de droite : image et titre de mission */}
           <div className="mission-col mission-col-right">
             <div className="mission-highlight-container">
               <h4 className="mission-goal-title">We Are In A Mission</h4>
@@ -50,6 +61,7 @@ const Goals = () => {
       </div>
     </section>
   );
-}; 
+};
 
+// Exportation du composant pour pouvoir l'utiliser ailleurs dans l'application
 export default Goals;

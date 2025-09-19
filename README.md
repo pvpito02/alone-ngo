@@ -1,6 +1,6 @@
 # Alone NGO - Site Web
 
-Ce projet est une reproduction fidèle de la maquette du site web de l'ONG Alone, réalisée avec React.js et Tailwind CSS.
+Ce projet est une reproduction fidèle de la maquette du site web de l'ONG Alone, réalisée avec React.js et CSS.
 
 ## Structure du projet
 
