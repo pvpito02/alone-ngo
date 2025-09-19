@@ -1,0 +1,181 @@
+/* Conteneur fixe pour les deux barres */
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #ebeced;
+  color: rgb(62, 62, 62);
+  padding: 8px 0;
+  font-size: 14px;
+  margin: 0 100px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar span {
+  color: #b82410;
+  font-weight: bold;
+}
+
+span {
+  color: #b82410;
+  font-weight: bold;
+}
+
+.social-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  color: rgb(62, 62, 62);
+  text-decoration: none;
+  font-size: 15px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main Header */
+.main-header {
+  background-color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 100px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c5282;
+  margin: 0;
+}
+
+.logo span {
+  color: #718096;
+  font-size: 14px;
+}
+
+.navigation {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation a {
+  color: #4a5568;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #2c5282;
+}
+
+/* Ajout d'un espace pour compenser le header fixe */
+body {
+  padding-top: 110px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .top-bar,
+  .main-header {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar,
+  .main-header {
+    margin: 0 20px;
+  }
+  
+  .top-bar-content {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .navigation a {
+    font-size: 14px;
+  }
+  
+  body {
+    padding-top: 140px; /* Plus d'espace sur mobile à cause du header plus grand */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar,
+  .main-header {
+    margin: 0 10px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+  }
+  
+  .navigation {
+    gap: 10px;
+  }
+  
+  .navigation a {
+    font-size: 12px;
+  }
+  
+  body {
+    padding-top: 150px;
+  }
+}

@@ -1,0 +1,153 @@
+.partners {
+  padding: 60px 0;
+  background-color: #cbdecb;
+  overflow: hidden;
+  margin-left : 80px;
+  margin-right : 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partners-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 40px;
+}
+
+.partners-scroll-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.partners-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.partner-card {
+  flex: 0 0 auto;
+  width: 220px;
+  margin: 0 15px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.partner-info {
+  text-align: center;
+}
+
+.partner-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 5px;
+}
+
+.partner-category {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* Animation de défilement */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause l'animation au survol */
+.partners-scroll-container:hover .partners-track {
+  animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .partner-card {
+    width: 200px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding: 40px 0;
+  }
+  
+  .partners-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .partner-card {
+    width: 180px;
+    margin: 0 8px;
+    padding: 15px;
+  }
+  
+  .partner-logo {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-title {
+    font-size: 24px;
+  }
+  
+  .partner-card {
+    width: 150px;
+    margin: 0 5px;
+    padding: 10px;
+  }
+  
+  .partner-logo {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .partner-name {
+    font-size: 14px;
+  }
+  
+  .partner-category {
+    font-size: 12px;
+  }
+  
+  /* Ralentir l'animation sur mobile */
+  .partners-track {
+    animation-duration: 25s;
+  }
+}

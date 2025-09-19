@@ -1,0 +1,203 @@
+.goals {
+  padding-bottom: 80px;
+  margin-left : 100px;
+  margin-right : 100px;
+  padding-top: 5px;
+}
+
+.goals-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 36px;
+  color: #000000;
+}
+
+
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.goal-card {
+  background: #cbdecb;
+  padding: 15px 10px;
+  border-radius: 8px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.goal-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.goal-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.goals-mission-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.mission-col {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mission-col-left {
+  background-color: #cbdecb;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.mission-content-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-subtitle {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.mission-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex-grow: 1;
+  font-weight: bold;
+  color: #000000;
+}
+
+.mission-button {
+  background-color: #324732;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.mission-button:hover {
+  background-color: #324732;
+}
+
+.mission-col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission-highlight {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.mission-goal-title {
+  text-align: right;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.mission-image {
+  text-align: center;
+}
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  .goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .goals {
+    padding: 60px 0;
+  }
+  
+  .goals-title {
+    font-size: 28px;
+  }
+  
+  .goals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .goals-mission-row {
+    flex-direction: column;
+  }
+  
+  .mission-col {
+    width: 100%;
+  }
+  
+  .mission-col-left {
+    padding: 20px;
+  }
+  
+  .mission-subtitle {
+    font-size: 20px;
+  }
+  
+  .mission-text {
+    font-size: 14px;
+  }
+  
+  .mission-highlight {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .goal-icon {
+    font-size: 20px;
+  }
+  
+  .goal-title {
+    font-size: 10px;
+  }
+  
+  .mission-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
