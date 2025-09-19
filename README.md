@@ -103,11 +103,9 @@ alone-ngo/
 
 ## 🛠 Technologies utilisées
 
-- **React.js 18** - Bibliothèque JavaScript pour construire des interfaces utilisateur
-- **Tailwind CSS** - Framework CSS utilitaire pour un design rapide et responsive
+- **React.js 18** - Bibliothèque JavaScript pour construire des rapide et responsive
 - **HTML5** - Structure sémantique du contenu
-- **JavaScript ES6+** - Langage de programmation pour la logique applicative
-- **PostCSS** - Outil de transformation CSS avec JavaScript
+
 
 ## ⚛️ Pourquoi React.js ?
 
@@ -273,10 +271,7 @@ Permet de personnaliser complètement la configuration de build, mais retire la 
 
 Vercel est la plateforme recommandée pour le déploiement d'applications React.
 
-1. **Installez Vercel CLI** :
-```bash
-npm i -g vercel
-```
+1. **Installez Vercel** :
 
 2. **Déployez l'application** :
 ```bash
@@ -296,26 +291,6 @@ vercel
 - CDN global pour de meilleures performances
 - SSL gratuit
 
-### Déploiement sur GitHub Pages
-
-1. **Installez le package gh-pages** :
-```bash
-npm install --save-dev gh-pages
-```
-
-2. **Ajoutez ces lignes dans package.json** :
-```json
-"homepage": "https://votrenom.github.io/alone-ngo",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-```
-
-3. **Déployez sur GitHub Pages** :
-```bash
-npm run deploy
-```
 
 ### Synchronisation GitHub et Vercel
 
@@ -324,12 +299,12 @@ npm run deploy
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/votrenom/alone-ngo.git
+git remote add origin https://github.com/pvpito02/alone-ngo
 git push -u origin main
 ```
 
 2. **Connectez Vercel à votre dépôt GitHub** :
-- Allez sur [vercel.com](https://vercel.com)
+- Allez sur [vercel.com](https://alone-ngo-mu.vercel.app/)
 - Importez votre projet depuis GitHub
 - Autorisez l'accès à votre dépôt
 - Configurez le déploiement automatique
